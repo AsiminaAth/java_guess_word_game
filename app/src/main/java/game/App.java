@@ -13,13 +13,17 @@ public class App {
     private static Scanner reader = null;
 
     private static int playGame(List<String> words) {
-        //TODO: calculate score
         int score = 5;
         return score;
     }
-    public static void main(String[] args) {
-        //TODO: initialize reader
 
+    private final String[] Words;
+
+        public void ArrayOfWords(){
+            Words = new String[]{"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
+        }
+        
+    public static void main(String[] args) {
         while(reader.hasNextLine()) {
             String word = reader.nextLine();
             words.add(word);
