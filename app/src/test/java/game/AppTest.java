@@ -9,9 +9,9 @@ import static org.junit.Assert.*;
 public class AppTest {
     @Test 
     public void arrayTesting(){
-        // String[] expectedOutput =   {"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
-        // String[] methodOutput =     {"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
-        // assertArrayEquals(expectedOutput, methodOutput); 
+        String[] expectedOutput =   {"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
+        String[] methodOutput =     {"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
+        assertArrayEquals(expectedOutput, methodOutput); 
         assertEquals(2, 1+1);
     }
 }
