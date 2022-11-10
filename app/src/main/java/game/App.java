@@ -6,10 +6,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
+import com.google.common.collect.Lists;
+
 public class App {
     private static Random rand = new Random();
     private static Scanner input = new Scanner(System.in);
-    private static List<String> words = new ArrayList<>();
+    // public static List<String> words = new ArrayList<>();
     private static Scanner reader = null;
 
     private static int playGame(List<String> words) {
@@ -17,12 +19,14 @@ public class App {
         return score;
     }
 
-    private final String[] Words;
-
-        public void ArrayOfWords(){
-            Words = new String[]{"dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish"};
-        }
+        List<String> words = Lists.newArrayList("dog", "cat", "lion", "tiger", "bear", "frog", "whale", "monkey", "bird", "fish");
+            
         
+    public App(List<String> words) {
+            this.words = words;
+        }
+
+
     public static void main(String[] args) {
         while(reader.hasNextLine()) {
             String word = reader.nextLine();
