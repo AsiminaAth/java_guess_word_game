@@ -22,3 +22,19 @@ In this week's pairing challenge, you'll build an old school favourite — a wor
     Define class attributes.
     Using a loop and some of Java's built-in classes, like StringBuilder.
     Running tests.
+    
+    
+* Building a word-guessing game - Part II
+
+   - So far the Game class is doing two things:
+
+    It picks a random word from the DICTIONARY
+    It displays the word to guess with hidden letters
+
+    It looks like there is an opportunity for us to tidy the codebase and achieve better separation of concerns.
+
+* Objectives
+
+    Extract functionality to a new class.
+    Use dependency injection.
+
